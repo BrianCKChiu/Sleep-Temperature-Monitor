@@ -54,8 +54,12 @@ if [ -z "$1" ] || [ "$1" != "server" ] && [ "$1" != "client" ]
     exit
 fi
 
-# start python script
-python3 main.py $1
+if [ "$1" == "server" ]
+  then
+  # start python script
+  python3 ./server/app.py
+else
+  python3 ./client/app.py
 
 
 
