@@ -14,19 +14,19 @@ fi
 
 
 # update and upgrade
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
 
 # check if git is installed
 if ! command -v git &> /dev/null
 then
     # install git
-    sudo apt-get install git
+    sudo apt -y install git
 fi
 
 
-sudo apt-get install python 3.11
-sudo apt install python3-pip
+sudo apt -y install python3.11
+sudo apt -y install python3-pip
 
 
 # change directory to home
@@ -54,7 +54,7 @@ fi
 
 #  install and/or update requirements
 
-
+echo $1
 
 
 if [ "$1" == "server" ]
