@@ -27,7 +27,8 @@ def start_server():
         if request.lower() == "close":
             client_socket.send("closed".encode("utf-8"))
             break
-
+        if not request:
+            continue
         # process data sent
         handle_request(client_socket, request)
         response = "received".encode("utf-8")  # convert string to bytes
