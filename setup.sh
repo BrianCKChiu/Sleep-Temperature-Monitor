@@ -43,9 +43,6 @@ else
     cd Sleep-Temperature-Monitor
     exit
 fi
-#  install and/or update requirements
-pip3 install -r requirements.txt
-
 
 # check if variable is passed in
 if [ -z "$1" ] || [ "$1" != "server" ] && [ "$1" != "client" ]
@@ -54,11 +51,22 @@ if [ -z "$1" ] || [ "$1" != "server" ] && [ "$1" != "client" ]
     exit
 fi
 
+
+#  install and/or update requirements
+
+
+
+
 if [ "$1" == "server" ]
   then
   # start python script
+  cd ./server
+  pip3 install -r requirements.txt
+
   python3 ./server/app.py
 else
+  cd ./client
+  pip3 install -r requirements.txt
   python3 ./client/app.py
 
 
