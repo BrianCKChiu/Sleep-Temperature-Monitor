@@ -68,6 +68,6 @@ else
   cd ./client
   pip3 install -r requirements.txt
   python3 ./client/app.py
-
+fi
 
 
