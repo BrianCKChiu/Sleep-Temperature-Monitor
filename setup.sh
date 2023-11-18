@@ -63,11 +63,11 @@ if [ "$1" == "server" ]
   cd ./server
   pip3 install -r requirements.txt
 
-  python3 ./server/app.py
+  python3 ./app.py
 else
   cd ./client
   pip3 install -r requirements.txt
-  python3 ./client/app.py
+  python3 ./app.py
 fi
 
 
