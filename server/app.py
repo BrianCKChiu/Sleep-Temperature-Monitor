@@ -1,7 +1,7 @@
 import socket
 
-from server.database import initialize_db
-from server.process import handle_request
+from database import initialize_db
+from process import handle_request
 
 
 def start_server():

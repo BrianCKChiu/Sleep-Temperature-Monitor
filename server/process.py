@@ -1,6 +1,6 @@
 import json
 
-from server.database import insert_temp_data
+from database import insert_temp_data
 from .models.request import RequestParameters
 from datetime import datetime
 
