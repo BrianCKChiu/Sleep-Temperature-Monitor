@@ -1,0 +1,61 @@
+start
+Motion 1: 59
+Motion 2: 117
+Chunk 0: 21
+Chunk 1: 1
+Chunk 2: 0
+Chunk 3: 2
+Chunk 4: 1
+Chunk 5: 2
+Chunk 6: 1
+Chunk 7: 2
+Chunk 8: 0
+---------------------------------
+Motion 1: 0
+Motion 2: 0
+Chunk 0: 30
+Chunk 1: 0
+Chunk 2: 0
+Chunk 3: 0
+Chunk 4: 0
+Chunk 5: 0
+Chunk 6: 0
+Chunk 7: 0
+Chunk 8: 0
+---------------------------------
+Motion 1: 0
+Motion 2: 0
+Chunk 0: 30
+Chunk 1: 0
+Chunk 2: 0
+Chunk 3: 0
+Chunk 4: 0
+Chunk 5: 0
+Chunk 6: 0
+Chunk 7: 0
+Chunk 8: 0
+---------------------------------
+Motion 1: 0
+Motion 2: 0
+Chunk 0: 30
+Chunk 1: 0
+Chunk 2: 0
+Chunk 3: 0
+Chunk 4: 0
+Chunk 5: 0
+Chunk 6: 0
+Chunk 7: 0
+Chunk 8: 0
+---------------------------------
+Motion 1: 70
+Motion 2: 76
+Chunk 0: 24
+Chunk 1: 0
+Chunk 2: 1
+Chunk 3: 0
+Chunk 4: 2
+Chunk 5: 0
+Chunk 6: 0
+Chunk 7: 0
+Chunk 8: 3
+---------------------------------

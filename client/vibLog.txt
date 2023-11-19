@@ -1,0 +1,13 @@
+start
+Motion 1: 71
+Motion 2: 96
+Chunk 0: 20
+Chunk 1: 2
+Chunk 2: 1
+Chunk 3: 2
+Chunk 4: 0
+Chunk 5: 2
+Chunk 6: 2
+Chunk 7: 1
+Chunk 8: 0
+---------------------------------
