@@ -14,19 +14,19 @@ fi
 
 
 # update and upgrade
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
 
 # check if git is installed
 if ! command -v git &> /dev/null
 then
     # install git
-    sudo apt-get install git
+    sudo apt -y install git
 fi
 
 
-sudo apt-get install python 3.11
-sudo apt install python3-pip
+sudo apt -y install python3.11
+sudo apt -y install python3-pip
 
 
 # change directory to home
@@ -43,9 +43,6 @@ else
     cd Sleep-Temperature-Monitor
     exit
 fi
-#  install and/or update requirements
-pip3 install -r requirements.txt
-
 
 # check if variable is passed in
 if [ -z "$1" ] || [ "$1" != "server" ] && [ "$1" != "client" ]
@@ -54,12 +51,23 @@ if [ -z "$1" ] || [ "$1" != "server" ] && [ "$1" != "client" ]
     exit
 fi
 
+
+#  install and/or update requirements
+
+echo $1
+
+
 if [ "$1" == "server" ]
   then
   # start python script
-  python3 ./server/app.py
-else
-  python3 ./client/app.py
+  cd ./server
+  pip3 install -r requirements.txt
 
+  python3 ./app.py
+else
+  cd ./client
+  pip3 install -r requirements.txt
+  python3 ./app.py
+fi
 
 
