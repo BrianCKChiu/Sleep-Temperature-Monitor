@@ -13,6 +13,7 @@ def initialize_db():
       CREATE TABLE IF NOT EXISTS temp_sensor_data (
         id INTEGER PRIMARY KEY,
         hostname TEXT,
+        client_id TEXT,
         dateTime DATETIME,
         temperature REAL
     );
@@ -22,12 +23,12 @@ def initialize_db():
     db.commit()
 
 
-def insert_temp_data(hostname, dateTime, temperature):
+def insert_temp_data(hostname, client_id, dateTime, temperature):
     db = get_connection()
     cursor = db.cursor()
     insert_query = """
-        INSERT INTO temp_sensor_data (hostname, dateTime, temperature)
-        VALUES (?, ?, ?);
+        INSERT INTO temp_sensor_data (hostname,client_id, dateTime, temperature)
+        VALUES (?, ?, ?, ?);
     """
-    cursor.execute(insert_query, (hostname, dateTime, temperature))
+    cursor.execute(insert_query, (hostname, client_id, dateTime, temperature))
     db.commit()

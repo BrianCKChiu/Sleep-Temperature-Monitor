@@ -51,23 +51,18 @@ if [ -z "$1" ] || [ "$1" != "server" ] && [ "$1" != "client" ]
     exit
 fi
 
-
 #  install and/or update requirements
-
 echo $1
-
 
 if [ "$1" == "server" ]
   then
-  # start python script
   cd ./server
-  pip3 install -r requirements.txt
-
-  python3 ./app.py
 else
   cd ./client
-  pip3 install -r requirements.txt
-  python3 ./app.py
 fi
 
+# start python script
+pip3 install pipenv
+pipenv install
+python3 ./app.py
 

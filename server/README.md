@@ -1,9 +1,16 @@
 # Server Pi
 
-The server creates a socket on port 8088 to allow incoming connections from clients.
+The server creates a web server that recieves sensor data from client pis and stores it in a database.
 
-Sample of incoming data (WIP):
+Runs on PORT 5000
+
+## Endpoints
+
+- `GET /health` - Returns 200 if the server is running
+- `POST /api/update` - Recieves sensor data from client pis and stores it in a database
 
 ```
-"{'temp':34.3}"
+Parameters:
+    - client_id: The id of the PI
+    - temperature: The temperature in celsius
 ```
